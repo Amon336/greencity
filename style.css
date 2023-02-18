@@ -1,0 +1,828 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Imbue:opsz,wght@10..100,500&family=Inter:wght@500&family=JetBrains+Mono:wght@200&family=Rubik&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
+
+@font-face {
+    font-family: 'KyivTypeSans';
+    src: url(./fonts/TTF/KyivTypeSans-Regular-.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* стили для менюшки */
+.menulist ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menulist a {
+    font-family: Arial;
+    color: black;
+    font-size: 20px;
+    height: 100%;
+    padding: 5px 12px;
+    border-radius: 50px;
+    transition-duration: 0.2s;
+    position: relative;
+}
+
+.menulist a:hover {
+    background-color: #43d27c;
+    color: rgb(241, 240, 240);
+}
+
+.menulist li {
+    font-size: 40px;
+}
+
+#mainlogo {
+    font-family: 'Inter', sans-serif;
+    color: black;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 87%;
+    margin: auto;
+    align-items: center;
+}
+
+.menulist {
+    width: 43%;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px 0 20px;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+}
+
+i {
+    background-color: #43d27c;
+    width: 50px;
+    height: 40px;
+    border-radius: 15px;
+    color: rgb(241, 240, 240);
+    font-size: 25px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+#bars {
+    display: none;
+}
+
+#xmark {
+    display: none;
+}
+
+
+.newmenulist {
+    width: 20%;
+}
+
+/* конец стилей для менюшки */
+
+/* Начало главной части страницы */
+#mainh1 {
+    font-family: 'KyivTypeSans';
+    font-weight: 100;
+    color: white;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.maintext {
+    font-family: 'KyivTypeSans';
+    font-weight: 100;
+    color: white;
+    font-size: 45px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+main {
+    background: linear-gradient(180deg, #5AD38A 0%, #5AD38A 15.62%, #5AD38A 37.5%, #5AD38A 70.65%, rgba(255, 255, 255, 0) 100%);
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.snowimg {
+    width: 300px;
+    height: 325px;
+    background: url(./img/Frame\ 7.png), linear-gradient(180deg, rgba(255, 255, 255, 0.89) 8.76%, rgba(181, 181, 181, 0) 100%);
+    border: 2px solid #969696;
+    border-radius: 45px;
+}
+
+.landimg {
+    width: 300px;
+    height: 325px;
+    background: url(./img/Frame\ 7\ 1.png), linear-gradient(180deg, rgba(255, 255, 255, 0.89) 8.76%, rgba(181, 181, 181, 0) 100%);
+    border: 2px solid #969696;
+    border-radius: 45px;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.service h3 {
+    font-family: 'Rubik', sans-serif;
+    color: #fdfdfd;
+    mix-blend-mode: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 30px;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.service a {
+    padding-top: 10px;
+    display: block;
+    width: 266px;
+    height: 50.14px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    background-color: #fdfdfd;
+    border-radius: 303.05px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.service a:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #5fb983;
+    transition: all .35s;
+    border-radius: 303.05px;
+}
+
+a span {
+    position: relative;
+    z-index: 2;
+}
+
+.service a:hover {
+    color: #fff;
+}
+
+.service a:hover:after {
+    width: 100%;
+}
+
+.sponsors img {
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.sponsors {
+    padding-bottom: 40px;
+}
+
+/* карта */
+iframe {
+    width: 650px;
+    height: 500px;
+    border: none;
+    border-radius: 20px;
+}
+
+.best h3 {
+    font-family: 'Rubik', sans-serif;
+    color: rgb(242, 242, 242);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.best p {
+    font-family: Arial;
+    color: rgb(242, 242, 242);
+    font-size: larger;
+    margin-bottom: 20px;
+}
+
+.best img {
+    border-radius: 20px;
+    box-shadow: 8.71953px 8.71953px 3.48781px rgba(0, 0, 0, 0.25);
+}
+
+.partners img {
+    border-radius: 20px;
+    box-shadow: 0px 4.13275px 4.13275px rgba(0, 0, 0, 0.25);
+}
+
+/* здесь заканчивается главная часть стилей */
+
+/* здесь начинаются стили для подвала */
+footer {
+    border-top: 1px solid #969696;
+    padding: 20px 0 40px;
+    margin-top: 20px;
+}
+
+.information h2 {
+    font-family: 'JetBrains Mono', monospace;
+    color: #6B6969;
+    margin-bottom: 15px;
+}
+
+.information {
+    display: flex;
+    justify-content: space-between;
+    width: 94%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.socialMedia a {
+    margin-right: 30px;
+}
+
+.socialMedia {
+    display: flex;
+    align-items: center;
+}
+
+.staff a {
+    font-family: 'Hind', sans-serif;
+    color: #807f7f;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 3px solid #00C14D;
+    border-radius: 313.1px;
+    transition: 0.5s;
+    position: relative;
+}
+
+/* стили для snow.html и grass.html */
+.count input {
+    width: 300px;
+    padding: 10px;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    background-color: #efefef;
+}
+
+#count_ {
+    border-radius: 10px 0 0 10px;
+}
+
+#countgrass_ {
+    border-radius: 10px 0 0 10px;
+}
+
+.countinputs {
+    display: flex;
+    margin-bottom: 17px;
+}
+
+.countinputs input[type='button'] {
+    width: 110px;
+    border: none;
+    background-color: #fdfdfd;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 0 10px 10px 0;
+    color: #6B6969;
+}
+
+.countinputs input[type='button']:hover {
+    cursor: pointer;
+}
+
+.countinputs input[type='button']:active {
+    cursor: default;
+}
+
+.count p {
+    font-family: 'Inter', sans-serif;
+    font-size: xx-large;
+    color: #fdfdfd;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#mainbutton {
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    background-color: #fdfdfd;
+    border-radius: 303.05px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#mainbutton:hover {
+    color: #fdfdfd;
+    background-color: #5fb983;
+    cursor: pointer;
+}
+
+.buyservice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+    margin: auto;
+}
+
+/* стили для trud.html */
+
+.form h1 {
+    font-size: 40px;
+    font-family: 'Rubik';
+    color: #5FD08D;
+    margin-bottom: 40px;
+}
+
+.form {
+    padding: 40px 0;
+    background-color: #fdfdfd;
+    width: 65%;
+    border-radius: 65px 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form label {
+    font-family: 'Rubik';
+    color: #868686;
+    margin-left: 50px;
+}
+
+.form input {
+    border: 2px solid #868686;
+    border-radius: 10px;
+    padding: 10px 0;
+    width: 300px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+}
+
+.form input[type='submit'] {
+    margin-top: 17px;
+    margin-left: 0;
+    width: 240px;
+    padding: 15px 0;
+    background: #61D790;
+    border-radius: 24px;
+    border: 2px solid #61D790;
+    color: rgb(237, 237, 237);
+    font-family: 'Rubik';
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    transition-duration: 0.4s;
+}
+
+.form input[type='submit']:hover {
+    background-color: #fdfdfd;
+    color: #61D790;
+    cursor: pointer;
+}
+
+#more {
+    position: relative;
+    top: 50px;
+    border-top: 2px solid #72DF91;
+    border-bottom: 2px solid #72DF91;
+    border-radius: 35px;
+    padding: 20px 30px;
+    font-size: 20px;
+    font-family: 'Rubik';
+    color: #5FD08D;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* стили для кнопки возврата*/
+#back {
+    position: fixed;
+    left: 30px;
+}
+
+/* /стили для кнопки возврата\*/
+
+#jobinfo {
+    font-family: 'Russo One', sans-serif;
+    color: #F5F5F5;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.48);
+    font-size: 34.869px;
+    margin-top: 100px;
+}
+
+/* стили для otziv.html */
+.otzivinputs {
+    padding: 10px 30px;
+    width: 38%;
+    text-align: start;
+    background-color: whitesmoke;
+    border-radius: 21px;
+}
+
+.otzivinputs input {
+    width: 280px;
+    padding: 10px 5px;
+    font-size: 17px;
+    border-radius: 15px;
+    border: none;
+    background-color: #dadada;
+}
+
+.otzivinputs textarea {
+    padding: 5px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #dadada;
+    border: none;
+}
+
+.otzivinputs input[type='button'] {
+    width: 200px;
+    transition: 0.2s;
+}
+
+.otzivinputs input[type='button']:hover {
+    color: whitesmoke;
+    background-color: #43d27c;
+    cursor: pointer;
+}
+
+.otzivinputs input[type='button']:active {
+    cursor: default;
+}
+
+.comment {
+    margin: 15px 0;
+    text-align: start;
+    font-family: 'Rubik';
+    background-color: whitesmoke;
+    width: 40%;
+    padding: 5px 15px 30px;
+    border-radius: 10px;
+}
+
+.comment h1 {
+    color: #9e9e9e;
+    margin: 0 0 20px;
+}
+
+/* стили для authorization.html */
+
+.passwords input {
+    width: 300px;
+    padding: 10px 3px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+    margin: 15px;
+    background-color: #dadada;
+    border: 2px solid gray;
+}
+
+.passwords input[type='button'] {
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3s;
+}
+
+.passwords input[type='button']:hover {
+    background-color: #43c778;
+    color: #ededed;
+    cursor: pointer;
+}
+
+.passwords input[type='button']:active {
+    cursor: default;
+}
+
+.passwords {
+    margin: 10% 0 10%;
+    text-align: start;
+    background-color: #fdfdfd;
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Zinformation h2 {
+    text-align: start;
+    margin: 15px 0;
+}
+
+.Zinformation {
+    color: #868686;
+    font-family: 'Rubik';
+    width: 50%;
+    background-color: whitesmoke;
+    padding: 10px 20px 20px;
+    margin: 15px 0;
+}
+
+@media screen and (min-width:1105px) and (max-width:1320px) {
+    .buyservice {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width:680px) and (max-width:1100px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .menulist {
+        width: 85%;
+    }
+
+    .menulist a {
+        padding: 10px 15px;
+        color: rgb(0, 0, 0);
+        text-decoration: underline;
+        text-decoration-color: #43d27c;
+        text-underline-offset: 8px;
+        letter-spacing: 2px;
+    }
+
+    main {
+        padding-top: 150px;
+    }
+
+    .services {
+        width: 95%;
+    }
+
+    .blackmaintext {
+        color: #333;
+    }
+
+    .buyservice {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .count {
+        position: relative;
+        top: 20px;
+        left: 50px;
+    }
+}
+
+@media(max-width:640px) {
+
+    #back {
+        display: none;
+    }
+
+    .form h1 {
+        font-size: xx-large;
+    }
+
+    .form input {
+        margin-left: 25px;
+        width: 240px;
+    }
+
+    .form label {
+        margin-left: 25px;
+    }
+
+    .form {
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .information h2 {
+        font-size: 15px;
+    }
+
+    .partners img {
+        width: 260px;
+        height: 200px;
+    }
+
+    .best img {
+        width: 260px;
+        height: 200px;
+    }
+
+    .blackmaintext {
+        color: #333;
+    }
+
+    .sponsors img {
+        width: 260px;
+        height: 200px;
+    }
+
+    iframe {
+        width: 270px;
+        height: 270px;
+    }
+
+    .maintext {
+        font-family: 'KyivTypeSans';
+        font-weight: 100;
+        color: white;
+        font-size: 30px;
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+
+    .service a {
+        width: 186px;
+    }
+
+    .snowimg {
+        width: 200px;
+        height: 245px;
+        background-position: center;
+    }
+
+    .landimg {
+        width: 200px;
+        height: 245px;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        margin-top: 40px;
+    }
+
+    main {
+        padding-top: 150px;
+    }
+
+    #xmark {
+        margin-top: 30px;
+    }
+
+    #bars {
+        margin-top: 30px;
+        display: block;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menulist ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #mainlogo {
+        text-align: center;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .menulist {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s;
+    }
+
+    .stick {
+        display: none;
+    }
+
+    .menulist a {
+        background-color: #43c778;
+        color: rgb(241, 241, 241);
+        border-radius: 10px;
+    }
+
+    .information {
+        flex-direction: column;
+    }
+
+    .place {
+        margin-top: 30px;
+    }
+
+    .buyservice {
+        flex-direction: column;
+    }
+
+    .count input {
+        width: 230px;
+    }
+
+    .countinputs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .countinputs input[type='button'] {
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+
+    #count_ {
+        border-radius: 10px;
+    }
+
+    .otzivinputs {
+        padding: 10px 30px;
+        width: 75%;
+        text-align: start;
+        background-color: whitesmoke;
+        border-radius: 21px;
+    }
+
+    .otzivinputs input {
+        width: 230px;
+        padding: 10px 5px;
+        font-size: 17px;
+        border-radius: 15px;
+        border: none;
+        background-color: #dadada;
+    }
+
+    .otzivinputs textarea {
+        padding: 5px;
+        width: 230px;
+        border-radius: 10px;
+        background-color: #dadada;
+        border: none;
+    }
+
+    .comment {
+        width: 80%;
+    }
+
+    .passwords {
+        width: 80%;
+    }
+
+    .passwords input {
+        width: 200px;
+    }
+
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8f0c855a91.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Здесь я пишу код для менюшки -->
+    <header>
+        <section class="menu">
+            <div class="logo">
+                <h1>
+                    <a href="./index.html" id="mainlogo">
+                        Green Crocodile
+                    </a>
+                </h1>
+            </div>
+            <div>
+                <!-- кнопки для выпадающего меню для телефона -->
+                <i class="fa fa-solid fa-bars" id="bars"></i>
+                <i class="fa fa-solid fa-xmark" id="xmark"></i>
+            </div>
+
+            <div class="menulist" id="menu">
+                <ul>
+                    <li> <a href="./index.html">Главная</a></li>
+                    <li class="stick">|</li>
+                    <li><a href="./trud.html">Трудоустройство</a></li>
+                    <li class="stick">|</li>
+                    <li><a href="#footer">Контакты</a></li>
+                    <li class="stick">|</li>
+                    <li><a href="">Отзывы</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <main>
+        <center>
+            <h1 id="mainh1">Сделаем ваш город красочнее</h1>
+        </center>
+        <center>
+            <form action="">
+                <section class="otzivinputs">
+                    <input type="text" name="name" placeholder="Введите ФИО" id="fio"><br><br>
+                    <textarea name="comment" id="comment" cols="30" rows="7"
+                        placeholder="Напишите отзыв"></textarea><br><br>
+                    <input type="button" value="Отправить" id="newcomment_">
+                </section>
+            </form>
+            <section class="comments" id="row">
+                <div class="comment">
+                    <h1>Аманияз Серикбаев</h1>
+                    <p>Сайт очень классный ! Персонал очень отзывчивый</p>
+                </div>
+            </section>
+        </center>
+    </main>
+    <!-- Здесь заканчивается главная часть главной страницы -->
+    <footer id="footer">
+        <section class="information">
+            <div class="contacts">
+                <h2>+7-702-855-79-77</h2>
+                <h2>AmaniazSerikbaev@mail.ru</h2>
+                <div class="socialMedia">
+                    <a href="https://www.instagram.com/papapevegemabodi_/#" target="_blank"><img src="./img/insta.png"
+                            alt="" width="60"></a>
+                    <a href="https://wa.me/77028557977" target="_blank"><img src="./img/whatsapp.png" alt=""
+                            width="54"></a>
+                </div>
+            </div>
+            <div class="place">
+                <h2>ТОО Green Crocodile</h2>
+                <h2>Проспект мангилик ел, C1</h2>
+            </div>
+        </section>
+        <section class="staff">
+            <center>
+                <a href="./authorization.html">Staff authorization</a>
+            </center>
+        </section>
+    </footer>
+</body>
+<script src="./otziv.js"></script>
+
+</html>
